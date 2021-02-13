@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="mensagem">
+        <p>O jogador <span class="amarelo">0</span> venceu!</p>
+        <p>Placar:</p>
+        <p><span class="amarelo">X</span> - <span data-pontos="X">0</span></p>
+        <p><span class="amarelo">0</span> - <span data-pontos="0">0</span></p>
+        <button data-btn="zerar">Zerar Placar</button>
+        <button data-btn="jogar-novamente">Jogar Novamente</button>
+    </div>
+    <section class="tabuleiro clicavel">
+        <div class="campo" data-linha="0" data-coluna="0" data-diagonal="0"></div>
+        <div class="campo" data-linha="0" data-coluna="1"></div>
+        <div class="campo" data-linha="0" data-coluna="2" data-diagonal="1"></div>
+        <div class="campo" data-linha="1" data-coluna="0"></div>
+        <div class="campo" data-linha="1" data-coluna="1" data-diagonal="ambas"></div>
+        <div class="campo" data-linha="1" data-coluna="2"></div>
+        <div class="campo" data-linha="2" data-coluna="0" data-diagonal="1"></div>
+        <div class="campo" data-linha="2" data-coluna="1"></div>
+        <div class="campo" data-linha="2" data-coluna="2" data-diagonal="0"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
